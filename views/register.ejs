@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+    body{
+    background-color:       #B0B0B0;
+  }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  </style>
+</head>
+<body>
+    <header >
+        <nav >
+            <ul >
+                <li >
+                    <a  href="/">Login</a>
+                </li>
+                <li class="main-header__item">
+                    <a  href="/register">Register</a>
+                </li>
+                <li class="main-header__item">
+                    <a  href="/event">Event</a>
+                </li>
+                <li class="main-header__item">
+                    <a  href="/dashboard">User
+                    </a>
+                </li>
+                <li class="main-header__item">
+                    <a  href="/dashboardevent">Dashboard-Event
+                    </a>
+                </li>
+                <li >
+                    <a  href="/dashboardindex">Dashboard-Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <h1>Register</h1>
+      <form action="/register" method="POST">
+        <div class="form-group">
+            <label for = 'firstname' class = 'form-label'>Firstname</label>
+            <input type="text" class="form-control" name="firstname" id="firstname">
+            
+        </div>
+        <div class="form-group">
+            <label for = 'lastname' class = 'form-label'>Lastname</label>
+            <input type="lastname" class="form-control" name="lastname" id="lastname" >
+    
+
+        </div>
+        <div class="form-group">
+            <label for = 'email' class = 'form-label'>E-mail <address></address></label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
+
+        </div>
+        <div class="form-group">
+            <label for = 'password' class = 'form-label'>Password</label>
+            <input type="password" class="form-control" name="password" id="password" >
+        </div>
+        <div class="form-group">
+            <label for = 'username' class = 'form-label'>Username</label>
+            <input type="username" class="form-control" name="username" id="username" >
+    
+
+        </div>
+        
+            
+         
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- <input type="file" id="files" name="files[]" multiple onchange="ReadData();" /> -->
+<!-- <output id="list"></output> -->
+
+<!-- <script>
+  function handleFileSelect(evt) {
+    var files = evt.target.files[0]; // FileList object
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+      output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+                  f.size, ' bytes, last modified: ',
+                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+                  '</li>');
+    }
+    document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+  }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+        -->
+      </form>
+    </div>
+</body>
+</html>
